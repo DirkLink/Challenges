@@ -25,11 +25,11 @@ class Cart
   end
 
   def value
-    @total_cost = 0
+    total_cost = 0
     @books_in_cart.each do |book|
-      @total_cost += book.price
+      total_cost += book.price
     end
-    @total_cost
+    total_cost
   end
 end
 
